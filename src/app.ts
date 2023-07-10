@@ -20,8 +20,8 @@ app
   .use('/event', eventsRouter)
   .use('/enrollments', enrollmentsRouter)
   .use('/tickets', ticketsRouter)
+  .use('/payments', paymentsRouter)
   .use(handleApplicationErrors);
- 
 
 export function init(): Promise<Express> {
   connectDb();
