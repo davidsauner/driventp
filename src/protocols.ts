@@ -47,9 +47,9 @@ export type RequestError = {
   message: string;
 };
 
-export type CreateTicketParam = Omit<Ticket, 'id' | 'createdAt' | 'updatedAt'>;
+export type CreateTicketParams = Omit<Ticket, 'id' | 'createdAt' | 'updatedAt'>;
 
-export type CardPaymerntsParams = {
+export type CardPaymentParams = {
   issuer: string;
   number: number;
   name: string;
